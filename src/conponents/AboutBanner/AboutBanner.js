@@ -1,16 +1,17 @@
 import React from "react";
+import "./AboutBanner.css";
 
 const AboutBanner = () => {
   return (
-    <div>
+    <div className="about-banner-parent-div container">
       <img
         src="https://html.devignedge.com/pettu/images/about-image.png"
         alt=""
       />
       <div>
-        <h3>About Us</h3>
-        <h2>We are best for Your pet care</h2>
-        <p>
+        <h3 className="about-text">About Us</h3>
+        <h2 className="about-heading">We are best for Your pet care</h2>
+        <p className="about-paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam
           quod fuga aliquid incidunt quia iusto. Explicabo libero labore
           adipisci nulla. Vel vitae maxime, neque laudantium a quas doloremque
@@ -18,10 +19,12 @@ const AboutBanner = () => {
           non autem facere tempora assumenda animi? Magnam aspernatur minus
           laboriosam soluta.
         </p>
-        <p>Behavioral Consultation & Counseling</p>
-        <p>Specialized Day Habilitation</p>
-        <p>Chicken Dog Treats Pet Supply Pet Food</p>
-        <button>Discover More</button>
+        <div className="about-single-div-p">
+          <p>Behavioral Consultation & Counseling</p>
+          <p>Specialized Day Habilitation</p>
+          <p>Chicken Dog Treats Pet Supply Pet Food</p>
+        </div>
+        <button className="about-btn">Discover More</button>
       </div>
     </div>
   );

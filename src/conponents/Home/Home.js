@@ -2,8 +2,12 @@ import React from "react";
 import "./Home.css";
 import Header from "../Headers/Header";
 import AboutBanner from "../AboutBanner/AboutBanner";
+import HomeService from "../HomeService/HomeService";
+import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
+  const getApi = useLoaderData();
+  //   console.log(getApi);
   return (
     <div>
       <div className="home-parent-div">
@@ -25,6 +29,11 @@ const Home = () => {
         </div>
       </div>
       <AboutBanner></AboutBanner>
+      <div>
+        {getApi.map((data) => (
+          <HomeService data={data} key={data.id}></HomeService>
+        ))}
+      </div>
     </div>
   );
 };

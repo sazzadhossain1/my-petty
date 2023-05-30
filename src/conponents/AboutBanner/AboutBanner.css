@@ -1,0 +1,39 @@
+.about-banner-parent-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: auto;
+}
+
+.about-text {
+  color: #dc3545;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.about-heading {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.about-paragraph {
+  line-height: 28px;
+  font-weight: 500;
+  color: rgb(156, 154, 154);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-single-div-p {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background-color: #28a745;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50px;
+}
