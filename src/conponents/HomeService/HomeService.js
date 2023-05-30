@@ -2,12 +2,12 @@ import React from "react";
 import "./HomeService.css";
 
 const HomeService = ({ data }) => {
-  console.log(data);
+  const { description, title, img } = data;
   return (
-    <div>
-      <h3>Service</h3>
-      <h2>We Provide Services</h2>
-      <div></div>
+    <div className="single-service-cart">
+      <img className="logo-img" src={img} alt="" />
+      <h3 className="service-cart-title">{title}</h3>
+      <p className="service-cart-p">{description}</p>
     </div>
   );
 };

@@ -30,9 +30,13 @@ const Home = () => {
       </div>
       <AboutBanner></AboutBanner>
       <div>
-        {getApi.map((data) => (
-          <HomeService data={data} key={data.id}></HomeService>
-        ))}
+        <h3 className="service-title">Service</h3>
+        <h2 className="service-heading">We Provide Services</h2>
+        <div className="map-div container">
+          {getApi.map((data) => (
+            <HomeService data={data} key={data.id}></HomeService>
+          ))}
+        </div>
       </div>
     </div>
   );
