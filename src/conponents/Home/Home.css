@@ -1,0 +1,31 @@
+.home-parent-div {
+  background: rgba(0, 0, 0, 0.247) url("../../images/header-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+.home-banner-text {
+  color: white;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+.home-heading {
+  font-size: 60px;
+}
+.enjoy {
+  color: #dc3545;
+  font-weight: 700;
+}
+.paragraph {
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.contact-btn {
+  background-color: #28a745;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}

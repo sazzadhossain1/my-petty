@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
+      <div className="navbar nav-parent-div">
+        <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -45,20 +45,20 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
+            <li className="font">
               <Link to="/home">Home</Link>
             </li>
-            <li>
+            <li className="font">
               <Link to="/about">About</Link>
             </li>
-            <li>
+            <li className="font">
               <Link to="/service">Service</Link>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        {/* <div className="navbar-end">
           <a className="btn">Get started</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
