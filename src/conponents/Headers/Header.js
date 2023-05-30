@@ -28,13 +28,13 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              <li className="font-first">
                 <Link to="/home">Home</Link>
               </li>
-              <li>
+              <li className="font-first">
                 <Link to="/about">About</Link>
               </li>
-              <li>
+              <li className="font-first">
                 <Link to="/service">Service</Link>
               </li>
             </ul>

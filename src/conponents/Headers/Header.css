@@ -1,6 +1,9 @@
 .nav-parent-div {
   color: white;
 }
+.font-first {
+  color: black;
+}
 .font {
   font-size: 20px;
   font-weight: 500;
