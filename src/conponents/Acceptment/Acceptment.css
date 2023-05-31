@@ -1,0 +1,12 @@
+.acceptment-div {
+  background: rgba(0, 0, 0, 0.8)
+    url("../../images/Acceptment-logo/counter-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.acceptment-img {
+  width: 100px;
+  border-radius: 50px;
+}

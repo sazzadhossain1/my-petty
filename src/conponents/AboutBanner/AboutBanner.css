@@ -1,3 +1,6 @@
+/* .svg-img {
+  margin-top: -355px;
+} */
 .about-banner-parent-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -8,7 +11,7 @@
 .about-text {
   color: #dc3545;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .about-heading {
@@ -36,4 +39,14 @@
   font-size: 20px;
   padding: 15px;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about-banner-parent-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-text-div {
+    padding: 20px;
+  }
 }

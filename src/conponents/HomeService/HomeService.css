@@ -1,12 +1,19 @@
 .single-service-cart {
   background-color: #21c0981c;
+  padding: 50px 50px 30px 50px;
 }
 .logo-img {
   width: 100px;
   border-radius: 50px;
+  margin: auto;
 }
 
 .service-cart-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: 700;
 }
 .service-cart-p {
 }

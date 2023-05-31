@@ -4,6 +4,7 @@ import Header from "../Headers/Header";
 import AboutBanner from "../AboutBanner/AboutBanner";
 import HomeService from "../HomeService/HomeService";
 import { useLoaderData } from "react-router-dom";
+import Acceptment from "../Acceptment/Acceptment";
 
 const Home = () => {
   const getApi = useLoaderData();
@@ -38,6 +39,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Acceptment></Acceptment>
     </div>
   );
 };
