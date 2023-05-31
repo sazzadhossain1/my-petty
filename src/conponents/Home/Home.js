@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Header from "../Headers/Header";
 import AboutBanner from "../AboutBanner/AboutBanner";
 import HomeService from "../HomeService/HomeService";
 import { useLoaderData } from "react-router-dom";
 import Acceptment from "../Acceptment/Acceptment";
+import Exprt from "../Exprt/Exprt";
 
 const Home = () => {
   const getApi = useLoaderData();
   //   console.log(getApi);
+
+  const [exprtData, setExprtData] = useState([]);
+  useEffect(() => {
+    fetch("exprt.json")
+      .then((res) => res.json())
+      .then((data) => setExprtData(data));
+  }, []);
   return (
     <div>
       <div className="home-parent-div">
@@ -40,6 +48,15 @@ const Home = () => {
         </div>
       </div>
       <Acceptment></Acceptment>
+
+      <div>
+        <h3 className="service-title">Exprt Team</h3>
+        <h1 className="service-heading">Meet the Exprt Team</h1>
+
+        {exprtData.map((exData) => (
+          <Exprt key={exData.id} exData={exData}></Exprt>
+        ))}
+      </div>
     </div>
   );
 };
