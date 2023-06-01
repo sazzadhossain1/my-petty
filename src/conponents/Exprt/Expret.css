@@ -1,7 +1,51 @@
 .exprt-cart-parent-div {
   margin: auto;
+  padding: 20px;
+  background-color: rgb(241, 239, 235);
+  border-radius: 15px;
+  text-align: center;
 }
+.exprt-name {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.exprt-name:hover {
+  color: rgb(143, 219, 66);
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.exprt-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.social-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-img-logo {
   width: 30px;
   border-radius: 50px;
+  margin: 10px;
+}
+
+.exprt-cart-parent-div:hover .exprt-person-img {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  .exprt-cart-parent-div {
+    width: 100%;
+    display: block;
+  }
+  .exprt-person-img {
+    margin: auto;
+  }
 }

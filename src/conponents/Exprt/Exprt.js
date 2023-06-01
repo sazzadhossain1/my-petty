@@ -7,18 +7,20 @@ const Exprt = ({ exData }) => {
   const { img, facebook, instragram, twite, name, title } = exData;
   return (
     <div className="exprt-cart-parent-div ">
-      <img src={img} alt="" />
-      <h2>{name}</h2>
-      <h4>{title}</h4>
-      <div>
-        <Link to={facebook}>
+      <img className="exprt-person-img" src={img} alt="" />
+      <Link>
+        <h2 className="exprt-name">{name}</h2>
+      </Link>
+      <h4 className="exprt-title">{title}</h4>
+      <div className="social-div">
+        <Link to={facebook} target="_blank">
           <img
             className="social-img-logo"
             src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo-500x313.png"
             alt=""
           />
         </Link>
-        <Link to={instragram}>
+        <Link to={instragram} target="_blank">
           <img
             className="social-img-logo"
             src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480-rw"
@@ -26,7 +28,7 @@ const Exprt = ({ exData }) => {
           />
         </Link>
 
-        <Link to={twite}>
+        <Link to={twite} target="_blank">
           <img
             className="social-img-logo"
             src="https://w7.pngwing.com/pngs/708/311/png-transparent-icon-logo-twitter-logo-twitter-logo-blue-social-media-area-thumbnail.png"

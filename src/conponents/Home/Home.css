@@ -96,3 +96,24 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* ======================================= */
+
+@media screen and (max-width: 1300px) {
+  .exprt-grid-div {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .exprt-grid-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .exprt-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+}
