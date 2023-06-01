@@ -53,9 +53,11 @@ const Home = () => {
         <h3 className="service-title">Exprt Team</h3>
         <h1 className="service-heading">Meet the Exprt Team</h1>
 
-        {exprtData.map((exData) => (
-          <Exprt key={exData.id} exData={exData}></Exprt>
-        ))}
+        <div className="exprt-grid-div container">
+          {exprtData.map((exData) => (
+            <Exprt key={exData.id} exData={exData}></Exprt>
+          ))}
+        </div>
       </div>
     </div>
   );
