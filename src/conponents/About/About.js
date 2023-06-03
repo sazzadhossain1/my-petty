@@ -1,12 +1,11 @@
 import React from "react";
 import "./About.css";
-import { useLoaderData } from "react-router-dom";
+import Header from "../Headers/Header";
 
 const About = () => {
-  const api = useLoaderData();
-  console.log(api);
   return (
     <div>
+      <Header></Header>
       <h1>This is about</h1>
     </div>
   );

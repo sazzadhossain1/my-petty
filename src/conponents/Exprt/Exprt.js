@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "./Expret.css";
 
 const Exprt = ({ exData }) => {
-  console.log(exData);
-  const { img, facebook, instragram, twite, name, title } = exData;
+  // console.log(exData);
+  const { img, facebook, instragram, twite, name, title, id } = exData;
   return (
     <div className="exprt-cart-parent-div ">
       <img className="exprt-person-img" src={img} alt="" />
-      <Link>
+      <Link to={`/singleExprt/${id}`}>
         <h2 className="exprt-name">{name}</h2>
       </Link>
       <h4 className="exprt-title">{title}</h4>

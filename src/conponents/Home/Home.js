@@ -13,7 +13,7 @@ const Home = () => {
 
   const [exprtData, setExprtData] = useState([]);
   useEffect(() => {
-    fetch("exprt.json")
+    fetch("https://my-pettu-server.vercel.app/exprtData")
       .then((res) => res.json())
       .then((data) => setExprtData(data));
   }, []);
