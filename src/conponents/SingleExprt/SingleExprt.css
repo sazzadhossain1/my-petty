@@ -36,9 +36,15 @@
 }
 
 /* ==================================== */
-
+.exprt-exprience-grid-div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 .exprtDetails-div {
-  background-color: rgb(240, 237, 232);
+  background-color: rgb(243, 241, 236);
+  width: 30%;
+  padding: 20px;
 }
 .personName {
   font-size: 25px;
@@ -48,4 +54,46 @@
   font-size: 18px;
   font-weight: 500;
   color: #28a745;
+}
+.exprt-exprience-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.exprt-exprience-name span {
+  color: rgb(175, 174, 174);
+}
+
+.share-link-div {
+  display: flex;
+  align-items: center;
+}
+.share-link {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.link {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.exprt-logo-png {
+  width: 30px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .exprt-exprience-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .singlePhoto {
+    margin: auto;
+  }
+  .exprtDetails-div {
+    width: 100%;
+    margin: auto;
+  }
 }
