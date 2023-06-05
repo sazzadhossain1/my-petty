@@ -16,14 +16,18 @@ const Footer = () => {
           </p>
           <div className="social-media-parent-div">
             <div className="social-media-btn">
-              <Link to={"https://www.facebook.com/"} target="_blank">
+              <Link
+                className="link-f"
+                to={"https://www.facebook.com/"}
+                target="_blank"
+              >
                 F
               </Link>
             </div>
 
             <div className="social-media-btn">
               <Link
-                className="social-media-btn"
+                className="link-t"
                 to={"https://www.facebook.com/"}
                 target="_blank"
               >
@@ -33,7 +37,7 @@ const Footer = () => {
 
             <div className="social-media-btn">
               <Link
-                className="social-media-btn"
+                className="link-i"
                 to={"https://www.facebook.com/"}
                 target="_blank"
               >
@@ -43,7 +47,7 @@ const Footer = () => {
 
             <div className="social-media-btn">
               <Link
-                className="social-media-btn"
+                className="link-in"
                 to={"https://www.facebook.com/"}
                 target="_blank"
               >
@@ -98,8 +102,12 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
             officiis?
           </p>
-          <input type="email" placeholder="E-mail Address" />
-          <button>Submit</button>
+          <input
+            className="input-field"
+            type="email"
+            placeholder="E-mail Address"
+          />
+          <button className="submit-btn">Submit</button>
         </div>
       </div>
     </div>

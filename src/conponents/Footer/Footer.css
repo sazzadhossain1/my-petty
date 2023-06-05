@@ -25,10 +25,15 @@
 }
 
 .single-footer-div p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
+  color: rgb(92, 89, 89);
 }
-
+.single-footer-div li {
+  margin-top: 12px;
+  font-size: 18px;
+  color: rgb(92, 89, 89);
+}
 .social-media-parent-div {
   display: flex;
   align-items: center;
@@ -36,12 +41,53 @@
 
 .social-media-btn {
   margin: 10px;
-  background-color: white;
+  background-color: rgb(92, 89, 89);
   color: black;
-  font-weight: 500;
-  font-size: 22px;
-  text-align: center;
+  font-weight: 800;
+  font-size: 28px;
+
   border-radius: 50%;
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.link-f {
+  color: red;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+.link-t {
+  color: red;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 15px;
+}
+.link-i {
+  color: red;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+.link-in {
+  color: red;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+.submit-btn {
+  background-color: white;
+  color: rgb(92, 89, 89);
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
 }
