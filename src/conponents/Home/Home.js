@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import Header from "../Headers/Header";
 import AboutBanner from "../AboutBanner/AboutBanner";
 import HomeService from "../HomeService/HomeService";
 import { useLoaderData } from "react-router-dom";

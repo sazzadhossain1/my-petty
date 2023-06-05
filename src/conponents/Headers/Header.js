@@ -37,6 +37,9 @@ const Header = () => {
               <li className="font-first">
                 <Link to="/service">Service</Link>
               </li>
+              {/* <li>
+                <Link to="/ourExprt">Our Exprt</Link>
+              </li> */}
             </ul>
           </div>
           <Link to="/home" className="btn btn-ghost normal-case text-xl">

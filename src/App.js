@@ -6,6 +6,7 @@ import About from "./conponents/About/About";
 import Service from "./conponents/Service/Service";
 import HomeService from "./conponents/HomeService/HomeService";
 import SingleExprt from "./conponents/SingleExprt/SingleExprt";
+import OurExprt from "./conponents/OurExprt/OurExprt";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +41,14 @@ function App() {
           path: "/homeService",
 
           element: <HomeService></HomeService>,
+        },
+
+        {
+          path: "/ourExprt",
+          loader: async () => {
+            return fetch("https://my-pettu-server.vercel.app/exprtData/");
+          },
+          element: <OurExprt></OurExprt>,
         },
 
         {
