@@ -1,0 +1,47 @@
+.footer-parent-div {
+  background: rgb(1, 2, 37)
+    url("https://html.devignedge.com/pettu/images/footer-tr-bg.png");
+  background-position: center;
+
+  margin-top: 100px;
+  color: white;
+  padding: 50px;
+}
+
+.footer-grid-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 200px;
+}
+
+.single-footer-div {
+  margin-top: 100px;
+}
+
+.footer-heading {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.single-footer-div p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social-media-parent-div {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-btn {
+  margin: 10px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}

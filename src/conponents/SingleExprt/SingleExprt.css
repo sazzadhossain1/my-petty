@@ -55,6 +55,21 @@
   font-weight: 500;
   color: #28a745;
 }
+.blank-div-parent {
+  display: flex;
+}
+.blank-1 {
+  height: 2px;
+  width: 100px;
+  background-color: red;
+  margin-top: 10px;
+}
+.blank-2 {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
 .exprt-exprience-name {
   font-size: 18px;
   font-weight: 500;
@@ -83,6 +98,24 @@
   width: 30px;
   border-radius: 50px;
 }
+/* =========================== */
+.experience-text-div {
+  text-align: center;
+  padding: 100px;
+}
+
+.experience-heading {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.experience-p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* ==================================== */
 
 @media screen and (max-width: 1100px) {
   .exprt-exprience-grid-div {
