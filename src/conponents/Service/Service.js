@@ -5,7 +5,6 @@ import Header from "../Headers/Header";
 const Service = () => {
   return (
     <div>
-      <Header></Header>
       <h1>Service</h1>
     </div>
   );

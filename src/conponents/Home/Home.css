@@ -6,10 +6,12 @@
   /* background-attachment: fixed; */
   background-blend-mode: darken;
   margin-bottom: 100px;
+  padding: 20px;
+  height: 100vh;
 }
 .home-banner-text {
   color: white;
-  margin-top: 250px;
+  margin-top: 200px;
   margin-left: 100px;
 }
 .home-heading {

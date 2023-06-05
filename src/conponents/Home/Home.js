@@ -13,14 +13,14 @@ const Home = () => {
 
   const [exprtData, setExprtData] = useState([]);
   useEffect(() => {
-    fetch("https://my-pettu-server.vercel.app/exprtData")
+    fetch("https://my-pettu-server.vercel.app/exprtData/")
       .then((res) => res.json())
       .then((data) => setExprtData(data));
   }, []);
   return (
     <div>
       <div className="home-parent-div">
-        <Header></Header>
+        {/* <Header></Header> */}
         <div className="home-banner-text">
           <h4 className="enjoy">We Enjoy Providing</h4>
           <h1 className="home-heading">

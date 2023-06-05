@@ -1,0 +1,10 @@
+.single-exprt-parent-div {
+  background: rgba(2, 13, 29, 0.9)
+    url("https://html.devignedge.com/pettu/images/site-header-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-blend-mode: darken;
+  margin-bottom: 100px;
+}

@@ -8,7 +8,7 @@ const Exprt = ({ exData }) => {
   return (
     <div className="exprt-cart-parent-div ">
       <img className="exprt-person-img" src={img} alt="" />
-      <Link to={`/singleExprt/${id}`}>
+      <Link id={id} to={`/singleExprt/${id}`}>
         <h2 className="exprt-name">{name}</h2>
       </Link>
       <h4 className="exprt-title">{title}</h4>
