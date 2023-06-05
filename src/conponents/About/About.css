@@ -1,0 +1,37 @@
+.about-banner {
+  background: rgba(2, 13, 29, 0.9)
+    url("https://html.devignedge.com/pettu/images/site-header-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-blend-mode: darken;
+  margin-bottom: 100px;
+  height: 70vh;
+  position: relative;
+}
+
+.about-banner-heading {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 850px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-banner-heading {
+    margin-left: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-banner-heading {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-banner-heading {
+    margin-left: 60px;
+  }
+}

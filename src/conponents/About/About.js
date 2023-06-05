@@ -1,11 +1,14 @@
 import React from "react";
 import "./About.css";
-import Header from "../Headers/Header";
+import AboutBanner from "../AboutBanner/AboutBanner";
 
 const About = () => {
   return (
     <div>
-      <h1>This is about</h1>
+      <div className="about-banner">
+        <h1 className="about-banner-heading">About Us</h1>
+      </div>
+      <AboutBanner></AboutBanner>
     </div>
   );
 };
