@@ -13,7 +13,7 @@ const Home = () => {
   const [exprtData, setExprtData] = useState([]);
   useEffect(() => {
     fetch(
-      "https://my-pettu-server-3wc6maj9o-sazzadhossain1.vercel.app/exprtData"
+      "https://my-pettu-server-nm984zo2a-sazzadhossain1.vercel.app/exprtData"
     )
       .then((res) => res.json())
       .then((data) => setExprtData(data));

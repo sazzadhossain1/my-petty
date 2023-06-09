@@ -40,6 +40,12 @@ const Header = () => {
               {/* <li>
                 <Link to="/ourExprt">Our Exprt</Link>
               </li> */}
+              <li className="font-first">
+                <Link to="/login">Login</Link>
+              </li>
+              <li className="font-first">
+                <Link to="/register">Register</Link>
+              </li>
             </ul>
           </div>
           <Link to="/home" className="btn btn-ghost normal-case text-xl">
@@ -56,6 +62,12 @@ const Header = () => {
             </li>
             <li className="font">
               <Link to="/service">Service</Link>
+            </li>
+            <li className="font">
+              <Link to="/login">Login</Link>
+            </li>
+            <li className="font">
+              <Link to="/register">Register</Link>
             </li>
           </ul>
         </div>
