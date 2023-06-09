@@ -5,6 +5,7 @@ import { AuthContext } from "../../context/UseContext";
 
 const Register = () => {
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
   const { createUser } = useContext(AuthContext);
   // console.log(createUser);
   const handleSubmit = (event) => {
@@ -24,14 +25,20 @@ const Register = () => {
       return;
     }
 
+    if (password.length < 8) {
+      setError("Please input at least 8 characters");
+      return;
+    }
     // create user with email and password //
     createUser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setError("");
       })
       .catch((error) => {
         console.log(error);
+        setError(error.message);
       });
   };
   return (
