@@ -17,7 +17,7 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     const confirmPassword = form.confirm.value;
-    console.log(name, email, password, confirmPassword);
+    // console.log(name, email, password, confirmPassword);
 
     // password validation //
     if (password !== confirmPassword) {
@@ -35,10 +35,14 @@ const Register = () => {
         const user = result.user;
         console.log(user);
         setError("");
+        setSuccess(true);
+        form.reset();
       })
       .catch((error) => {
         console.log(error);
-        setError(error.message);
+        setError("This Email already exist");
+        setSuccess(false);
+        form.reset();
       });
   };
   return (
@@ -98,20 +102,27 @@ const Register = () => {
                 />
               </div>
 
-              <h1>
+              <h1 className="text-center my-3">
                 Already have an account?
                 <Link style={{ color: "green" }} to="/login">
                   Please login
                 </Link>
               </h1>
-              <p style={{ color: "red" }} className="successAndError">
+              <p
+                style={{ color: "red" }}
+                className="successAndError text-center "
+              >
                 {error}
               </p>
 
-              <p style={{ color: "green" }} className="successAndError">
-                User Created Successfully
-              </p>
-
+              {success && (
+                <p
+                  style={{ color: "green" }}
+                  className="successAndError text-center"
+                >
+                  User Created Successfully
+                </p>
+              )}
               <div className="form-control mt-6">
                 <button className="register-btn">Register</button>
               </div>
