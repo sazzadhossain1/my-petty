@@ -1,6 +1,5 @@
 import React from "react";
 import "./Service.css";
-import Header from "../Headers/Header";
 
 const Service = () => {
   return (

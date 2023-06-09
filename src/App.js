@@ -7,7 +7,6 @@ import Service from "./conponents/Service/Service";
 import HomeService from "./conponents/HomeService/HomeService";
 import SingleExprt from "./conponents/SingleExprt/SingleExprt";
 import Login from "./conponents/Login/Login";
-import LogOut from "./conponents/Register/Register";
 import Register from "./conponents/Register/Register";
 
 function App() {

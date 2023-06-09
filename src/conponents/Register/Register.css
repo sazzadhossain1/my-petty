@@ -1,0 +1,16 @@
+.input-filed {
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.register-btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.googleBtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}

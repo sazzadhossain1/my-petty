@@ -1,7 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Register.css";
 
 const Register = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event);
+
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirmPassword = form.confirm.value;
+    console.log(name, email, password, confirmPassword);
+  };
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -10,7 +22,7 @@ const Register = () => {
             <h1 className="text-6xl font-bold my-6">Please Register!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form onSubmit={handleSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
@@ -19,7 +31,7 @@ const Register = () => {
                   type="text"
                   name="name"
                   placeholder="Your Name"
-                  className="input input-bordered"
+                  className="input-filed"
                   required
                 />
               </div>
@@ -31,7 +43,7 @@ const Register = () => {
                   type="email"
                   name="email"
                   placeholder="email"
-                  className="input input-bordered"
+                  className="input-filed"
                   required
                 />
               </div>
@@ -43,7 +55,7 @@ const Register = () => {
                   type="password"
                   name="password"
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input-filed"
                   required
                 />
               </div>
@@ -55,7 +67,7 @@ const Register = () => {
                   type="password"
                   name="confirm"
                   placeholder="confirm password"
-                  className="input input-bordered"
+                  className="input-filed"
                 />
               </div>
 
@@ -72,11 +84,11 @@ const Register = () => {
               </p>
 
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Register</button>
+                <button className="register-btn">Register</button>
               </div>
             </form>
 
-            <button className="googleBtn btn btn-primary">
+            <button className="googleBtn ">
               <p className="ml-5">SignIn With Google</p>
             </button>
           </div>
