@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import { AuthContext } from "../../context/UseContext";
 
 const Register = () => {
+  const [error, setError] = useState("");
   const { createUser } = useContext(AuthContext);
   // console.log(createUser);
   const handleSubmit = (event) => {
@@ -16,6 +17,12 @@ const Register = () => {
     const password = form.password.value;
     const confirmPassword = form.confirm.value;
     console.log(name, email, password, confirmPassword);
+
+    // password validation //
+    if (password !== confirmPassword) {
+      setError("Password Not Match");
+      return;
+    }
 
     // create user with email and password //
     createUser(email, password)
@@ -90,7 +97,9 @@ const Register = () => {
                   Please login
                 </Link>
               </h1>
-              <p style={{ color: "red" }} className="successAndError"></p>
+              <p style={{ color: "red" }} className="successAndError">
+                {error}
+              </p>
 
               <p style={{ color: "green" }} className="successAndError">
                 User Created Successfully
