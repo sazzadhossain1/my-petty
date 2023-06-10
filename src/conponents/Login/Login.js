@@ -5,6 +5,7 @@ import { AuthContext } from "../../context/UseContext";
 const Login = () => {
   const { loginUser } = useContext(AuthContext);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -19,9 +20,12 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         setSuccess(true);
+        setError("");
       })
       .catch((error) => {
         console.log(error);
+        setError(error.message);
+        setSuccess(false);
       });
   };
   return (
@@ -82,7 +86,9 @@ const Login = () => {
               <p
                 style={{ color: "red" }}
                 className="successAndError text-center "
-              ></p>
+              >
+                {error}
+              </p>
 
               {success && (
                 <p
