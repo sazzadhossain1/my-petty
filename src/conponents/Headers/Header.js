@@ -107,9 +107,9 @@ const Header = () => {
             )}
           </ul>
         </div>
-        {/* <div className="navbar-end">
-          <a className="btn">Get started</a>
-        </div> */}
+        <div className="navbar-end">
+          <h1 className="mr-5">{user?.displayName}</h1>
+        </div>
       </div>
     </div>
   );
