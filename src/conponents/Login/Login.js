@@ -21,11 +21,13 @@ const Login = () => {
         console.log(user);
         setSuccess(true);
         setError("");
+        form.reset();
       })
       .catch((error) => {
         console.log(error);
         setError(error.message);
         setSuccess(false);
+        form.reset();
       });
   };
   return (
