@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/UseContext";
 
 const Login = () => {
@@ -7,13 +7,17 @@ const Login = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/home";
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const name = form.name.value;
+
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name, email, password);
+    console.log(email, password);
 
     loginUser(email, password)
       .then((result) => {
@@ -22,6 +26,7 @@ const Login = () => {
         setSuccess(true);
         setError("");
         form.reset();
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error);
@@ -51,18 +56,6 @@ const Login = () => {
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit} className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Name</span>
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  className="input-filed"
-                  required
-                />
-              </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
