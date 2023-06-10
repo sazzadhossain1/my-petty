@@ -6,7 +6,7 @@ import { AuthContext } from "../../context/UseContext";
 const Register = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-  const { createUser } = useContext(AuthContext);
+  const { createUser, signInWithGoogle } = useContext(AuthContext);
   // console.log(createUser);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -43,6 +43,22 @@ const Register = () => {
         setError("This Email already exist");
         setSuccess(false);
         form.reset();
+      });
+  };
+
+  // SignIn With Google //
+  const handleGoogleLogin = () => {
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setSuccess(true);
+        setError("");
+      })
+      .catch((error) => {
+        console.log(error);
+        setError(error.message);
+        setSuccess(false);
       });
   };
   return (
@@ -128,7 +144,7 @@ const Register = () => {
               </div>
             </form>
 
-            <button className="googleBtn ">
+            <button onClick={handleGoogleLogin} className="googleBtn ">
               <p className="ml-5">SignIn With Google</p>
             </button>
           </div>
