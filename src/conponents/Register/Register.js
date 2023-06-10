@@ -58,7 +58,6 @@ const Register = () => {
       .catch((error) => {
         console.log(error);
         setError(error.message);
-        setSuccess(false);
       });
   };
   return (
