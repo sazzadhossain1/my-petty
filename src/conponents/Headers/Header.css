@@ -10,3 +10,8 @@
   font-weight: 500;
   font-style: italic;
 }
+
+.logOut-btn {
+  background-color: rgba(0, 204, 255, 0.897);
+  color: black;
+}

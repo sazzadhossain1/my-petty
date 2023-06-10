@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/UseContext";
 
 const Header = () => {
+  const { user, logOutUser } = useContext(AuthContext);
+  console.log(user);
+
+  const handleLogOutUser = () => {
+    logOutUser()
+      .then(() => {
+        console.log("User logOut Successfully");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div>
       <div className="navbar nav-parent-div">
@@ -40,12 +53,24 @@ const Header = () => {
               {/* <li>
                 <Link to="/ourExprt">Our Exprt</Link>
               </li> */}
-              <li className="font-first">
-                <Link to="/login">Login</Link>
-              </li>
-              <li className="font-first">
-                <Link to="/register">Register</Link>
-              </li>
+
+              {user?.uid ? (
+                <li className="font-first">
+                  <button onClick={handleLogOutUser} className="logOut-btn ">
+                    LogOut
+                  </button>
+                </li>
+              ) : (
+                <>
+                  {" "}
+                  <li className="font-first">
+                    <Link to="/login">Login</Link>
+                  </li>
+                  <li className="font-first">
+                    <Link to="/register">Register</Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
           <Link to="/home" className="btn btn-ghost normal-case text-xl">
@@ -63,12 +88,23 @@ const Header = () => {
             <li className="font">
               <Link to="/service">Service</Link>
             </li>
-            <li className="font">
-              <Link to="/login">Login</Link>
-            </li>
-            <li className="font">
-              <Link to="/register">Register</Link>
-            </li>
+
+            {user?.uid ? (
+              <li className="font">
+                <button onClick={handleLogOutUser} className="logOut-btn ">
+                  LogOut
+                </button>
+              </li>
+            ) : (
+              <>
+                <li className="font">
+                  <Link to="/login">Login</Link>
+                </li>
+                <li className="font">
+                  <Link to="/register">Register</Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         {/* <div className="navbar-end">

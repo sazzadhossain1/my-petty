@@ -5,6 +5,7 @@ import {
   getAuth,
   onAuthStateChanged,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 import app from "../firebase/firebase.init";
 
@@ -24,6 +25,11 @@ const UseContext = ({ children }) => {
     return signInWithPopup(auth, provider);
   };
 
+  // LogOut User //
+  const logOutUser = () => {
+    return signOut(auth);
+  };
+
   // Get Current User //
   useEffect(() => {
     const unSubScribe = onAuthStateChanged(auth, (currentUser) => {
@@ -34,7 +40,7 @@ const UseContext = ({ children }) => {
     return () => unSubScribe();
   }, []);
 
-  const authInfo = { user, createUser, signInWithGoogle };
+  const authInfo = { user, createUser, signInWithGoogle, logOutUser };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
