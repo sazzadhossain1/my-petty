@@ -6,7 +6,8 @@ import { AuthContext } from "../../context/UseContext";
 const Register = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-  const { createUser, signInWithGoogle } = useContext(AuthContext);
+  const { createUser, signInWithGoogle, updateUserProfile } =
+    useContext(AuthContext);
   // console.log(createUser);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -37,6 +38,7 @@ const Register = () => {
         setError("");
         setSuccess(true);
         form.reset();
+        handleUpdateUserName(name);
       })
       .catch((error) => {
         console.log(error);
@@ -58,6 +60,20 @@ const Register = () => {
       .catch((error) => {
         console.log(error);
         setError(error.message);
+      });
+  };
+
+  // Update user display name //
+  const handleUpdateUserName = (name) => {
+    const profile = {
+      displayName: name,
+    };
+    updateUserProfile(profile)
+      .then(() => {
+        console.log("Get the user profile name");
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
   return (
