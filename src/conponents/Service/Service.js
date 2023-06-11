@@ -10,7 +10,7 @@ const Service = () => {
     <div>
       <h1>Service</h1>
 
-      <div className="service-grid-div">
+      <div className="service-grid-div container">
         {serviceGetApi.map((data) => (
           <ServiceHeader data={data} key={data.id}></ServiceHeader>
         ))}

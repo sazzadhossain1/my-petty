@@ -1,3 +1,20 @@
+.service-header-parent-child-div {
+  background-color: #e2e8e9;
+  text-align: center;
+  padding: 20px;
+
+  margin: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+}
 .service-header-logo {
-  width: 100px;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.service-header-title {
+  margin: 20px;
+}
+.service-header-description {
 }

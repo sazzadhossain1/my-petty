@@ -8,7 +8,7 @@ const ServiceHeader = ({ data }) => {
   console.log(title, img, description);
   return (
     <div>
-      <div>
+      <div className="service-header-parent-child-div ">
         <img className="service-header-logo" src={img} alt="" />
         <h2 className="service-header-title">{title}</h2>
         <p className="service-header-description"> {description}</p>

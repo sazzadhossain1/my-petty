@@ -1,4 +1,14 @@
 .service-grid-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  .service-grid-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
 }
