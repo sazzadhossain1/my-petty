@@ -1,14 +1,33 @@
+.service-banner-div {
+  background: rgba(0, 0, 0, 0.6)
+    url("https://html.devignedge.com/pettu/images/site-header-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-bottom: 100px;
+  padding: 20px;
+  height: 100vh;
+}
 .service-grid-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   width: 50%;
+  gap: 20px;
 }
 
 @media screen and (max-width: 1100px) {
   .service-grid-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .service-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }

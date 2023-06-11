@@ -12,6 +12,7 @@ const ServiceHeader = ({ data }) => {
         <img className="service-header-logo" src={img} alt="" />
         <h2 className="service-header-title">{title}</h2>
         <p className="service-header-description"> {description}</p>
+        <button className="service-header-booking-btn">Booking Now</button>
       </div>
     </div>
   );

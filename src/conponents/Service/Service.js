@@ -8,7 +8,9 @@ const Service = () => {
   // console.log(serviceGetApi);
   return (
     <div>
-      <h1>Service</h1>
+      <div className="service-banner-div">
+        <h2>Our Services</h2>
+      </div>
 
       <div className="service-grid-div container">
         {serviceGetApi.map((data) => (
