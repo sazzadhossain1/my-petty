@@ -36,6 +36,9 @@ function App() {
         },
         {
           path: "/service",
+          loader: async () => {
+            return fetch("service.json");
+          },
           element: <Service></Service>,
         },
         {

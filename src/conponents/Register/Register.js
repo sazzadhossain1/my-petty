@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Register.css";
 import { AuthContext } from "../../context/UseContext";
 
@@ -8,6 +8,11 @@ const Register = () => {
   const [success, setSuccess] = useState(false);
   const { createUser, signInWithGoogle, updateUserProfile } =
     useContext(AuthContext);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from.pathname || "/home";
+
   // console.log(createUser);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,6 +44,7 @@ const Register = () => {
         setSuccess(true);
         form.reset();
         handleUpdateUserName(name);
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error);
