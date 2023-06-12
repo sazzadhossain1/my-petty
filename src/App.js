@@ -37,7 +37,7 @@ function App() {
         {
           path: "/service",
           loader: async () => {
-            return fetch("service.json");
+            return fetch("https://my-pettu-server.vercel.app/serviceData");
           },
           element: <Service></Service>,
         },

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ServiceHeader.css";
+import { Link } from "react-router-dom";
 
 const ServiceHeader = ({ data }) => {
   //   console.log(data);
@@ -12,7 +13,9 @@ const ServiceHeader = ({ data }) => {
         <img className="service-header-logo" src={img} alt="" />
         <h2 className="service-header-title">{title}</h2>
         <p className="service-header-description"> {description}</p>
-        <button className="service-header-booking-btn">Booking Now</button>
+        <Link>
+          <button className="service-header-booking-btn">Booking Now</button>
+        </Link>
       </div>
     </div>
   );
