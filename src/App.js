@@ -44,6 +44,11 @@ function App() {
         },
         {
           path: "/serviceDetails/:id",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://my-pettu-server.vercel.app/serviceData/${params.id}`
+            );
+          },
           element: <ServiceDetails></ServiceDetails>,
         },
         {
