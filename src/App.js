@@ -8,6 +8,7 @@ import HomeService from "./conponents/HomeService/HomeService";
 import SingleExprt from "./conponents/SingleExprt/SingleExprt";
 import Login from "./conponents/Login/Login";
 import Register from "./conponents/Register/Register";
+import ServiceDetails from "./conponents/ServiceDetails/ServiceDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +41,10 @@ function App() {
             return fetch("https://my-pettu-server.vercel.app/serviceData");
           },
           element: <Service></Service>,
+        },
+        {
+          path: "/serviceDetails/:id",
+          element: <ServiceDetails></ServiceDetails>,
         },
         {
           path: "/homeService",

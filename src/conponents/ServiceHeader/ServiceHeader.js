@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ServiceHeader = ({ data }) => {
   //   console.log(data);
 
-  const { title, img, description } = data;
+  const { title, img, description, id } = data;
   console.log(title, img, description);
   return (
     <div>
@@ -13,7 +13,7 @@ const ServiceHeader = ({ data }) => {
         <img className="service-header-logo" src={img} alt="" />
         <h2 className="service-header-title">{title}</h2>
         <p className="service-header-description"> {description}</p>
-        <Link>
+        <Link to={`/serviceDetails/:${id}`}>
           <button className="service-header-booking-btn">Booking Now</button>
         </Link>
       </div>
