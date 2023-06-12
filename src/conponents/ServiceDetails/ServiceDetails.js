@@ -7,6 +7,7 @@ const ServiceDetails = () => {
   console.log(getServiceDataById);
   return (
     <div>
+      <div className="serviceDetails-parent-div"></div>
       <h1>This is service Details</h1>
     </div>
   );
