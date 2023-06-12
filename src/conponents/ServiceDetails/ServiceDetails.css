@@ -6,4 +6,20 @@
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
+  position: relative;
+}
+.serviceDetails-banner-heading {
+  font-size: 30px;
+  color: blue;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+.home {
+  text-decoration: underline;
+}
+.reload {
+  color: red;
+  font-size: 40px;
+  font-weight: 700;
 }
