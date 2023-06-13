@@ -23,3 +23,20 @@
   font-size: 40px;
   font-weight: 700;
 }
+/* ============================ */
+.sectionAndAside-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-left: auto;
+}
+.left-site-section {
+  margin: auto;
+}
+.highlight-photo {
+  width: 800px;
+  border-radius: 20px;
+}
+
+.right-site-section {
+}
