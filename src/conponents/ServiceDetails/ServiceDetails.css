@@ -64,6 +64,27 @@
   margin-bottom: 20px;
   color: rgb(156, 175, 192);
 }
+.second-grid-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
+.boarding {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.logo-parent {
+  display: flex;
+  align-items: center;
+}
+.tickMark-logo-img {
+  width: 30px;
+  border-radius: 100%;
+}
+.li-text {
+  font-weight: 500;
+}
 .right-site-nav {
 }

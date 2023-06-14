@@ -83,15 +83,38 @@ const ServiceDetails = () => {
           <p className="description">{description2}</p>
           <p className="description">{description3}</p>
           <p className="description">{description4}</p>
-          <div>
+          <div className="second-grid-div">
             <img src={descriptionImg} alt="" />
-            <h1>{bording}</h1>
-            <p>{description3}</p>
             <ul>
-              <p>{description4}</p>
-              <li>{counseling}</li>
-              <li>{habilitation}</li>
-              <li>{food}</li>
+              <h1 className="boarding">{bording}</h1>
+              <p className="description">{description4}</p>
+
+              <p className="logo-parent">
+                <img
+                  className="tickMark-logo-img"
+                  src="https://media.istockphoto.com/id/1396933001/vector/vector-blue-verified-badge.jpg?s=612x612&w=0&k=20&c=aBJ2JAzbOfQpv2OCSr0k8kYe0XHutOGBAJuVjvWvPrQ="
+                  alt=""
+                />
+                <li className="li-text">{counseling}</li>
+              </p>
+              <p className="logo-parent">
+                <img
+                  className="tickMark-logo-img"
+                  src="https://media.istockphoto.com/id/1396933001/vector/vector-blue-verified-badge.jpg?s=612x612&w=0&k=20&c=aBJ2JAzbOfQpv2OCSr0k8kYe0XHutOGBAJuVjvWvPrQ="
+                  alt=""
+                />
+
+                <li className="li-text">{habilitation}</li>
+              </p>
+
+              <p className="logo-parent">
+                <img
+                  className="tickMark-logo-img"
+                  src="https://media.istockphoto.com/id/1396933001/vector/vector-blue-verified-badge.jpg?s=612x612&w=0&k=20&c=aBJ2JAzbOfQpv2OCSr0k8kYe0XHutOGBAJuVjvWvPrQ="
+                  alt=""
+                />
+                <li className="li-text">{food}</li>
+              </p>
             </ul>
           </div>
           <p>{description5}</p>
