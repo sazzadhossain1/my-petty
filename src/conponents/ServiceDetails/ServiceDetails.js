@@ -117,17 +117,23 @@ const ServiceDetails = () => {
               </p>
             </ul>
           </div>
-          <p>{description5}</p>
+          <p className="description">{description5}</p>
         </div>
         <div className="right-site-nav">
-          <div>
-            <h2>Search</h2>
-            <div></div>
-            <div></div>
-            <input type="text" placeholder="Search Keyword" />
+          <div className="search-div">
+            <h2 className="search">Search</h2>
+            <div className="blank-div-parent">
+              <div className="blank-red"></div>
+              <div className="blank-blue"></div>
+            </div>
+            <input
+              className="input-field"
+              type="text"
+              placeholder="Search Keyword"
+            />
           </div>
           <div>
-            <h2>Categories</h2>
+            <h2 className="categories">Categories</h2>
             <div></div>
             <div></div>
             <Link>Pet Grooming</Link>

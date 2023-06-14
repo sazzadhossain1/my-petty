@@ -23,21 +23,6 @@
   font-size: 40px;
   font-weight: 700;
 }
-/* ============================ */
-/* .sectionAndAside-parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  width: 100%;
-}
-.left-site-section {
-}
-.highlight-photo {
-  border-radius: 20px;
-}
-
-.right-site-nav {
-} */
 
 /* ======================= */
 .child-parent-grid-div {
@@ -52,6 +37,7 @@
 .highlight-photo {
   width: 100%;
   height: 25%;
+  border-radius: 20px;
 }
 .provide {
   font-size: 30px;
@@ -88,3 +74,27 @@
 }
 .right-site-nav {
 }
+.search-div {
+  background-color: rgb(104, 105, 129);
+  width: 50%;
+  padding: 35px;
+  border-radius: 20px;
+}
+.search {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px 10px 10px 0px;
+}
+.blank-red {
+  height: 2px;
+  width: 20%;
+  background-color: red;
+  margin-bottom: 20px;
+}
+.blank-blue {
+  height: 2px;
+  width: 40%;
+  background-color: blue;
+}
+
+/* ================= */
