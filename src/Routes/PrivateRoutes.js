@@ -4,10 +4,14 @@ import { AuthContext } from "../context/UseContext";
 
 const PrivateRoutes = ({ children }) => {
   const location = useLocation();
-  const { user } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
 
   if (user && user.uid) {
     return children;
+  }
+
+  if (loading) {
+    return <div className="text-4xl">Loading...</div>;
   }
   return <Navigate to="/login" state={{ from: location }}></Navigate>;
 };

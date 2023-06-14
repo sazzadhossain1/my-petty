@@ -17,23 +17,30 @@ const provider = new GoogleAuthProvider();
 
 const UseContext = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
   // Create User with Email and Password //
+
   const createUser = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   // SignIn with Google //
   const signInWithGoogle = () => {
+    setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
   // Login User //
   const loginUser = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   // LogOut User //
   const logOutUser = () => {
+    setLoading(true);
     return signOut(auth);
   };
 
@@ -48,12 +55,14 @@ const UseContext = ({ children }) => {
       if (currentUser === null || currentUser) {
         setUser(currentUser);
       }
+      setLoading(false);
     });
     return () => unSubScribe();
   }, []);
 
   const authInfo = {
     user,
+    loading,
     createUser,
     signInWithGoogle,
     logOutUser,
