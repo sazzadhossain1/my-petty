@@ -33,7 +33,7 @@ const ServiceDetails = () => {
           </p>
         </h2>
       </div>
-      <h1>This is service Details</h1>
+
       {/* <div className="sectionAndAside-parent container">
         <div className="left-site-section">
           <img className="highlight-photo" src={img2} alt="" />
@@ -132,21 +132,42 @@ const ServiceDetails = () => {
               placeholder="Search Keyword"
             />
           </div>
-          <div>
+          <div className="categories-parent-div">
             <h2 className="categories">Categories</h2>
-            <div></div>
-            <div></div>
-            <Link>Pet Grooming</Link>
+            <div className="blank-div-parent">
+              <div className="blank-red"></div>
+              <div className="blank-blue"></div>
+            </div>
+            <Link className="arrow-logo-text">
+              <img
+                className="arrow-logo"
+                src="https://icon-library.com/images/right-arrow-icon/right-arrow-icon-2.jpg"
+                alt=""
+              />
+              <p className="link-text">Pet Grooming</p>
+            </Link>
             <br />
-            <Link>Pet Food Provider</Link>
+            <hr className="my-4" />
+            <Link className="arrow-logo-text">
+              <img
+                className="arrow-logo"
+                src="https://icon-library.com/images/right-arrow-icon/right-arrow-icon-2.jpg"
+                alt=""
+              />
+              <p className="link-text">Pet Food Provider</p>
+            </Link>
             <br />
-            <Link>Veterinary Service</Link>
+            <hr className="my-4" />
+            <Link className="link-text">Veterinary Service</Link>
             <br />
-            <Link>Healthy Meals</Link>
+            <hr className="my-4" />
+            <Link className="link-text">Healthy Meals</Link>
             <br />
-            <Link>Healthy Pet Food</Link>
+            <hr className="my-4" />
+            <Link className="link-text">Healthy Pet Food</Link>
             <br />
-            <Link>Pet Care</Link>
+            <hr className="my-4" />
+            <Link className="link-text">Pet Care</Link>
           </div>
         </div>
       </div>

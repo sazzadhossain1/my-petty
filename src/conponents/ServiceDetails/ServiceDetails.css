@@ -30,10 +30,10 @@
   grid-template-columns: repeat(2, 1fr);
   width: 80%;
   margin-left: auto;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 100px;
 }
-.left-site-div {
-}
+
 .highlight-photo {
   width: 100%;
   height: 25%;
@@ -98,3 +98,29 @@
 }
 
 /* ================= */
+.categories-parent-div {
+  background-color: rgb(104, 105, 129);
+  width: 50%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.categories {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.arrow-logo-text {
+  display: flex;
+  align-items: center;
+}
+.arrow-logo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.link-text {
+  font-size: 18px;
+  font-weight: 500;
+}
