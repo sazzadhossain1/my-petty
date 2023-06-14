@@ -124,3 +124,50 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+/* responsive ness */
+
+@media screen and (max-width: 1100px) {
+  .serviceDetails-parent-div {
+    margin-bottom: 100px;
+  }
+  .child-parent-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 0;
+  }
+  .search-div {
+    width: 100%;
+  }
+  .categories-parent-div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .second-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .right-site-nav {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search-div {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .last-p {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .last-p {
+    margin-bottom: 300px;
+  }
+}

@@ -117,7 +117,7 @@ const ServiceDetails = () => {
               </p>
             </ul>
           </div>
-          <p className="description">{description5}</p>
+          <p className="description last-p">{description5}</p>
         </div>
         <div className="right-site-nav">
           <div className="search-div">
@@ -158,16 +158,44 @@ const ServiceDetails = () => {
             </Link>
             <br />
             <hr className="my-4" />
-            <Link className="link-text">Veterinary Service</Link>
+            <Link className="arrow-logo-text">
+              <img
+                className="arrow-logo"
+                src="https://icon-library.com/images/right-arrow-icon/right-arrow-icon-2.jpg"
+                alt=""
+              />
+              <p className="link-text">Veterinary Service</p>
+            </Link>
             <br />
             <hr className="my-4" />
-            <Link className="link-text">Healthy Meals</Link>
+            <Link className="arrow-logo-text">
+              <img
+                className="arrow-logo"
+                src="https://icon-library.com/images/right-arrow-icon/right-arrow-icon-2.jpg"
+                alt=""
+              />
+              <p className="link-text">Healthy Meals</p>
+            </Link>
             <br />
             <hr className="my-4" />
-            <Link className="link-text">Healthy Pet Food</Link>
+            <Link className="arrow-logo-text">
+              <img
+                className="arrow-logo"
+                src="https://icon-library.com/images/right-arrow-icon/right-arrow-icon-2.jpg"
+                alt=""
+              />
+              <p className="link-text">Healthy Pet Food</p>
+            </Link>
             <br />
             <hr className="my-4" />
-            <Link className="link-text">Pet Care</Link>
+            <Link className="arrow-logo-text">
+              <img
+                className="arrow-logo"
+                src="https://icon-library.com/images/right-arrow-icon/right-arrow-icon-2.jpg"
+                alt=""
+              />
+              <p className="link-text">Pet Care</p>
+            </Link>
           </div>
         </div>
       </div>
